@@ -1,0 +1,186 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;469;500;600&display=swap');
+
+body{
+    font-family: 'Oswald', sans-serif;
+}
+#header{
+    background-image: url(img/hero.jpg);
+    background-size: cover;
+    min-height: 30rem;
+    opacity: .8;
+    width: 100%;
+    
+}
+.container .mur{
+    height: 25rem;
+}
+.category p{
+    opacity: 0;
+    transition: all .3s ease;
+    padding-top: 30px;
+
+    
+}
+.category{
+    height:calc(auto+30px) ;
+    padding-bottom: 60px;
+    overflow: hidden;
+
+}
+.category h4::before {
+    content: "";
+    display: block;
+    width: 40px;
+    background-color: chartreuse;
+    margin: 5px auto 20px auto;
+    height: 2px;
+    transition: all .3s ease;
+
+}
+.category:hover h4::before {
+    width: 120px;
+}
+.category:hover p{
+    opacity: 1;
+    display: block;
+    padding-top: 10px;
+    color: dimgray;
+}
+#first-step .logo{
+    background-image: url(img/service_1.png);
+    background-size: cover;
+    height: 20rem;
+}
+#first-step .description span{
+    display: block;
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+#first-step .description p{
+    font-size: .9rem;
+
+} 
+#first-step .wordpress{
+    background-image: url(img/service_2.png);
+    background-size: cover;
+    height: 20rem;
+}
+#first-step .voice-over{
+    background-image: url(img/service_3.png);
+    background-size: cover;
+    height: 20rem;
+}
+#first-step .whiteboard{
+    background-image: url(img/service_4.png);
+    background-size: cover;
+    height: 20rem;
+}
+#first-step .social-media{
+    background-image: url(img/service_5.png);
+    background-size: cover;
+    height: 20rem;
+}
+#first-step .row>div {
+    flex: 1 0 calc(50% - 2rem);
+    
+}
+#first-step .description{
+    margin: 5px 5px;
+}
+
+@media (min-width: 768px){
+    #first-step .row>div {
+        flex: 0 1 calc(20% - 1rem);}
+        #first-step .description{
+            margin: 0px 0px;
+        }
+
+
+
+}
+#yours .less{
+    font-weight: 80 ;
+}
+
+.testimonials {
+    background-color: #eaeaeb;
+}
+.testimonials .carousel {
+    background-color: white;
+}
+.testimonials .carousel-item  h4 {
+    font-weight: 700;
+    font-size: 1.4rem;
+}
+.testimonials .carousel-item blockquote {
+    font-size: 1.8rem;
+    color: #676767;
+    font-style: italic;
+}
+.testimonials .carousel-item  p {
+    font-size: .8rem;
+}
+.card:hover{
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.281);
+    transition: all .8s ease;
+   
+}
+@media (max-width: 580px){
+    .looks {
+       justify-content: center;
+        
+    }
+
+
+}
+
+.container-fluid .nav-link{
+    color: #777777;
+}
+.header-scroll{
+    opacity: 0;
+    margin-top:-300px;
+    border-bottom: 1px solid #777777;
+    background-color: whitesmoke;
+    width: 100%;
+    z-index: 100;
+    transition: all .8s ease;
+    position: fixed;
+}
+.header-scroll.active{
+    opacity:1;
+    margin-top: 5px;
+}
+.footer {
+    border-top: 1px solid #eaeaeb;
+}
+.footer h3 {
+    color: #777777;
+    font-size: 1.2rem;
+}
+.footer .nav-link {
+    color: #777777!important;
+    padding: .5rem 0;
+    font-size: 1rem;
+}
+.footer .container-fluid  {
+    display: flex;
+    flex-wrap: wrap;
+}
+.footer .container-fluid > div {
+    justify-content: space-between;
+    flex: 0 0 calc(50% - 1rem);
+    padding: 1rem;
+}
+@media (min-width: 768px) {
+    .footer .container-fluid > div  {
+        flex: 0 0 calc(33.3% - 1rem);
+    }
+}
+
+@media (min-width: 992px) {
+    .footer .container-fluid > div  {
+        flex: 0 1 calc(20%);
+    }
+}
+
